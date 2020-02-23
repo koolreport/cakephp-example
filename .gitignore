@@ -5,6 +5,7 @@
 /logs/*
 /tmp/*
 /vendor/*
+/webroot/koolreport_assets/*
 
 # OS generated files #
 ######################

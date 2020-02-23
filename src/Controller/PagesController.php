@@ -31,6 +31,15 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
+
+    public function report()
+    {
+        $report = new \App\Reports\MyReport;
+        $report->run();
+        $this->set("report",$report);
+        return $this->render();
+    }
+
     /**
      * Displays a view
      *
